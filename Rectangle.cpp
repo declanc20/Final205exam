@@ -10,13 +10,26 @@
 ///////////////////////////////////////////////////////////////////////////////
 
 #include "Rectangle.h"
+#include"assert.h"
+#include<stdexcept>
+
+Rectangle::Rectangle(double newLength,double newWidth){ //constructor to populate
+    Rectangle::length = newLength;
+    Rectangle::width = newWidth;
+}
+
+
+
 
 double Rectangle::getLentgh() const {
-    return lentgh;
+    return length;
 }
 
 void Rectangle::setLentgh(double lentgh) {
-    Rectangle::lentgh = lentgh;
+    if (length <= 0 ){
+        throw std::invalid_argument("length and width must be > 0");
+    }
+    Rectangle::length = lentgh;
 }
 
 double Rectangle::getWidth() const {
@@ -24,5 +37,8 @@ double Rectangle::getWidth() const {
 }
 
 void Rectangle::setWidth(double width) {
+    if (width <= 0 ){
+        throw std::invalid_argument("length and width must be > 0");
+    }
     Rectangle::width = width;
 }

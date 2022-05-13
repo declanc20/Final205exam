@@ -15,8 +15,9 @@
 class Rectangle : public Shape{
 
 protected:  ///////////////////////// Member Variables /////////////////////////
-   double lentgh;
+   double length;
     double width;
+
 
 public:   /////////////////////// Constructors ////////////////////////////////
     /// Create a Mammal with the *minimum* required fields

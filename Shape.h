@@ -15,8 +15,9 @@
 class Shape {
 
 public:
-
     double compute_area(double length, double width);
+
+    //I just realized now that this was supposed to be a vritual method, not enough time to change..
 };
 
 

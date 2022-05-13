@@ -14,9 +14,7 @@
 class Square: public Rectangle {
 
 public:
-    Square(double newSide): Rectangle( newSide, newSide){
-
-}
+    Square(double newSide): Rectangle( newSide, newSide){}
 
 public:
     double getSide();

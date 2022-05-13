@@ -9,21 +9,21 @@
 /// @date   13_May_2022
 ///////////////////////////////////////////////////////////////////////////////
 
+#pragma once
 #include"Shape.h"
 
 
 class Rectangle : public Shape{
 
-protected:  ///////////////////////// Member Variables /////////////////////////
+protected:
    double length;
     double width;
 
 
-public:   /////////////////////// Constructors ////////////////////////////////
-    /// Create a Mammal with the *minimum* required fields
+public:
     Rectangle(double newLength,double newWidth) ;
 
-public:  ////////////////////////// Getters public
+public:
     double getLentgh() const;
     double getWidth() const;
 
@@ -31,6 +31,9 @@ public:  ////////////////////////// Getters public
 private: ///setters private
     void setLentgh(double lentgh);
     void setWidth(double width);
+
+public: //override method
+    double compute_area();
 
 };
 

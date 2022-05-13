@@ -12,5 +12,5 @@
 #include "Shape.h"
 
 double Shape::compute_area(double length, double width ){
-    return length,width;
+    return length*width;
 }

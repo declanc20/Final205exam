@@ -9,10 +9,19 @@
 /// @date   13_May_2022
 ///////////////////////////////////////////////////////////////////////////////
 
+#include"Rectangle.h"
+/*
+class Square: public Rectangle {
 
+public:
+    //Square(double newSide): Rectangle( newSide, newSide){
 
-class Square {
+//}
+
+public:
+    double getSide();
 
 };
+ */
 
 

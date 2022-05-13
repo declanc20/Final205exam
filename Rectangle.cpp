@@ -13,7 +13,8 @@
 #include"assert.h"
 #include<stdexcept>
 
-Rectangle::Rectangle(double newLength,double newWidth){ //constructor to populate
+
+Rectangle::Rectangle(double newLength,double newWidth){
     Rectangle::length = newLength;
     Rectangle::width = newWidth;
 }

@@ -14,6 +14,23 @@
 
 class Rectangle : public Shape{
 
+protected:  ///////////////////////// Member Variables /////////////////////////
+   double lentgh;
+    double width;
+
+public:   /////////////////////// Constructors ////////////////////////////////
+    /// Create a Mammal with the *minimum* required fields
+    Rectangle(double newLength,double newWidth) ;
+
+public:  ////////////////////////// Getters public
+    double getLentgh() const;
+    double getWidth() const;
+
+
+private: ///setters private
+    void setLentgh(double lentgh);
+    void setWidth(double width);
+
 };
 
 

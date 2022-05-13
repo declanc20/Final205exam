@@ -10,3 +10,19 @@
 ///////////////////////////////////////////////////////////////////////////////
 
 #include "Rectangle.h"
+
+double Rectangle::getLentgh() const {
+    return lentgh;
+}
+
+void Rectangle::setLentgh(double lentgh) {
+    Rectangle::lentgh = lentgh;
+}
+
+double Rectangle::getWidth() const {
+    return width;
+}
+
+void Rectangle::setWidth(double width) {
+    Rectangle::width = width;
+}
